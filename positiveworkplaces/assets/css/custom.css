@@ -1,0 +1,882 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Estilos Generales  ==========*/
+
+
+body{
+    background: #090400;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'GalanoGrotesque', Helvetica, arial;
+}
+b{
+    font-weight: bold;
+    font-style: italic;
+}
+h1,h2,h3,h4,h5,h6{font-family: 'GalanoGrotesque', Helvetica, arial;}
+
+.azul{color: #24abea;}
+.rojo{color: #ea5309;}
+.verde{color: #91d300;}
+.rosa{color: #cf0982;}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+    .navbar-dark .navbar-toggler{
+        outline: none;
+    }
+    .navbar-collapse{
+        background: #333;
+        color: #666;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        padding:5px 10px;
+        border-bottom: 1px solid #000; 
+    }
+
+    .navbar-brand {
+        max-width: 70%;
+    }
+    .navbar-brand img{
+        max-width: 40%;
+        margin-right: 15px;
+    }
+
+    .darkHeader {
+        background-color: #000;
+        border-bottom: 1px solid #444;
+        -webkit-transition: background-color 0.5s ease-in-out;
+        -moz-transition: background-color 0.5s ease-in-out;
+        -ms-transition: background-color 0.5s ease-in-out;
+        -o-transition: background-color 0.5s ease-in-out;
+        transition: background-color 0.5s ease-in-out;
+        z-index: 50 !important;
+    }
+
+    .section-top{
+        left: 30%;
+        position: absolute;
+        top: 8%;
+        width: 40%;
+        z-index: 2;
+    }
+    h1.title{
+        background: url("../images/bg-title-h1.png") no-repeat right bottom;
+        font-weight: bold;
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    #intro{
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+    #intro h6{
+        display: block;
+        margin:30px 0px;
+        font-weight: bold;
+        font-style: italic; 
+        font-size: 19px;
+    }
+    #intro img{
+        margin: 20px auto 0;
+        display: block;
+    }
+    #speakers-home h2{
+        font-weight: bold;
+        margin: 40px 0px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #speakers-home h1{
+        text-align: center;
+        width: 100%;
+        font-size: 54px;
+        text-transform: uppercase;
+    }
+    #speakers-home h2 span{
+        font-weight: 100;
+    }
+    #speakers-home img{
+        width: 70%;
+        margin: 20px 15% 40px 15%;
+    }
+    #speakers-home h4{
+        display: block;
+        font-size: 24px;
+        margin: 0px 0px 20px 0px;
+    }
+    #speakers-home p{
+        margin: 20px 0px;
+    }
+
+    #speakers-home a.btn-foro{
+        background: #24abea;
+        border-radius: 25px;
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        margin:50px auto;
+        width: 80%;
+    }
+    #speakers-home h4{
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        /*min-height: 70px;*//* Es para desktop*/
+    }
+    #speakers-home :nth-of-type(1) h4 {background: url("../images/left-arrow-speaker-01.png") left top no-repeat;}
+    #speakers-home :nth-of-type(2) h4 {background: url("../images/left-arrow-speaker-02.png") left top no-repeat;}
+    #speakers-home :nth-of-type(3) h4 {background: url("../images/left-arrow-speaker-03.png") left top no-repeat;}
+    #speakers-home :nth-of-type(4) h4 {background: url("../images/left-arrow-speaker-04.png") left top no-repeat;}
+    #speakers-home :nth-of-type(5) h4 {background: url("../images/left-arrow-speaker-05.png") left top no-repeat;}
+
+    #comprar{text-align: center;}
+    #comprar h2{
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+}
+    #comprar h3{
+        font-size: 19px;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+    }
+    #comprar h3:before{
+        content: url("../images/narrow-right.png");
+        top: 10px;
+        position: relative;
+        left: -10px;
+    }
+    #comprar h3:after{
+        content: url("../images/narrow-left.png");
+        top: 10px;
+        position: relative;
+        left: 10px;
+    }
+    #comprar img{
+        margin: 50px 20px;
+        width: calc(100% - 40px);
+    }
+    #contador{
+        background: cover;
+        background: url("../images/bg-counter.png") no-repeat center center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #counter, #counterEng{
+        display: block;
+        margin: 50px 5%;
+        text-align: center !important;
+        width: 90%;
+    }
+    #counter span, #counterEng span{
+        display: block;
+        float: left;
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+        width: 25%;
+    }
+    #counter span p, #counterEng span p{
+        display: block;
+        font-size: 9px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+
+    #marcas{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    #marcas p{text-align: center;}
+
+    
+    
+    #footer{
+        background: #cf0982;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    ul#menu-footer{
+        display: block;
+        width: 100%;
+    }
+    ul#menu-footer li{
+        display:block;
+        float: left;
+        text-align: center;
+        width: 40%;
+    }
+    ul#menu-footer li a{
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .col-2dot4,
+    .col-sm-2dot4,
+    .col-md-2dot4,
+    .col-lg-2dot4,
+    .col-xl-2dot4 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #form-suscribe h5{
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    #form-suscribe{
+        margin-top: 30px;
+        margin-bottom:30px;
+    }
+    #form-suscribe p{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #form-suscribe form{
+        display: inline-block;
+        width: 100%;
+    }
+    #form-suscribe form ul{list-style: none;}
+    #form-suscribe form ul.inputs-list li span {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    #form-suscribe form ul.inputs-list li span a{
+        color: #fff;
+    }
+    #form-suscribe form label[id*="label-email"]{display: none;}
+    #form-suscribe form input[id*="email"]{
+        border: none;
+        border-radius: 30px;
+        color:#333; 
+        display: inline-block;
+        margin: 20px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        width: 100%;
+    }
+    #form-suscribe form input[type*="submit"]{
+        background: #cf0982;
+        border: none;
+        border-radius: 30px;
+        color: #000;
+        display: block;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 20px auto;
+        outline: none;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        width: 60%;     
+    }
+    #form-suscribe form input[type*="submit"]:hover{
+        background: #ff06a6;
+    }
+    #form-suscribe form .hs-error-msgs{
+        color: red;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #hoteles-intro{
+        text-align: center;
+
+        margin: 40px 0px;
+    }
+    #hoteles{
+        
+    }
+    #hoteles h2{
+        color:#91d300;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 30px 0px;
+    }
+    #hoteles img{
+        margin: 10px auto;
+        display: block;
+    }
+    #hoteles iframe{
+        margin-bottom: 50px;
+    } 
+
+    .hotel-content{
+        display: block;
+        width: 100%;
+        float: left;
+        min-height: 300px;
+    }
+
+    #intro-lugares{
+        text-align: center;
+        margin: 50px 0px;
+    }
+    #intro-lugares h1{
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 20px 0px;
+    }
+    #intro-lugares h1 span{
+        font-weight: 100;
+    }
+    a.btn.compra{
+        background: #24abea;
+        color: #fff;
+        text-align: center;
+        margin: 50px auto;
+        display: block;
+        border-radius: 50px;
+        padding: 10px 30px;
+        font-weight: bold;
+        font-size: 26px;
+    }
+    #lugares img{ margin-bottom: 20px;}
+    #lugares h4{
+        color: #91d300;
+        font-weight: bold;
+        margin: 30px 0px;
+        width: 100%;
+    }
+    #lugares iframe{
+        border:none;
+        width: 100%;
+        display: block;
+        float: left;
+        margin:30px 0px 50px 0px;
+    }
+
+    img.sta-lucia{
+        margin: 50px auto;
+        display: block;
+        max-width: 280px;
+    }
+    #intro-eventos{
+        text-align: center;
+    }
+
+    #intro-eventos h1{
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    #intro-eventos h1 span{
+        font-weight: 100;
+    }
+    #intro-eventos p{margin: 20px;}
+    h1.act-title{
+        background: url("../images/bg-act-title.png") no-repeat left bottom;
+        background-size: 100%;
+        color:#94c93d;
+        font-weight: bold;
+        margin: 40px 0px;
+        padding-bottom: 20px;
+        width: 100%;
+        display: block;
+    }
+    #act-eventos img{
+        margin: 15px 0px;
+    }
+    #museos-positivos{
+        background: url("../images/bg-museos-positivos.png") no-repeat center center;
+        background-size: cover;
+    }
+    
+    #marco-top{
+        margin:100px 0px 0px 0px;
+    }
+    #marco-top img{
+        margin: 0px 0px 60px 0px;
+    }
+    #museo-marco{
+        background:#abd7d0 url("../images/logo-museo-marco.png") no-repeat 90% 95%;
+        color: #333;
+        margin: 100px 0px 150px 0px;
+        padding-bottom: 100px;
+    }
+
+    #museo-marco h4{
+        background: url("../images/bg-title-marco.png") no-repeat bottom right;
+        color: #fff;
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+        margin:40px 10% 20px 10%;
+        padding-bottom: 20px;
+        width: 80%;
+    }
+    #museo-marco h5{
+        font-weight: bold;
+        margin:0px 10% 20px 10%;
+        width: 80%;
+    }
+    #museo-marco p{
+        margin:0px 10% 20px 10%;
+        width: 80%;
+    }
+
+    #intro-sede{}
+    #intro-sede h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+        margin: 40px 0px;
+    }
+    #intro-sede h2{
+        font-weight: bold;
+        font-size: 24px;
+        margin: 30px 0px;
+    }
+
+    #intro-sede img{
+        margin-bottom: 40px;
+    }
+
+    #intro-registro h1{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0px 0px 60px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    #intro-registro h1 span{
+        font-weight: 100;
+    }
+    #intro-registro h2{
+        background: url(../images/bg-title-yellow.png) no-repeat 55% 80%;
+        color: #f9ef6a;
+        font-weight: bold;
+        width: 100%;
+        background-size: 40%;
+    } 
+    #intro-registro p{
+        text-align: left;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    #intro-registro img{
+        margin: 30px auto;
+        display: block;
+    }
+
+    #talleres-intro{
+        text-align: center;
+    } 
+    #talleres-intro h3{
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    } 
+    #talleres-intro h4{
+        display: block;
+        font-size: 28px;
+        font-weight: 100;
+        margin-bottom: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    } 
+    #talleres h1{
+        background: url("../images/bg-title-taller.png") no-repeat right bottom;
+        font-size: 28px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    #talleres h2{
+        font-weight: 100;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    #talleres a{
+        display: block;
+        text-align: center;
+        margin:40px auto; 
+    }
+
+    h1.title-taller{
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin:50px 0px; 
+        width: 100%;
+    }
+
+    #talleres-agenda h2{
+        
+        color: #24abea;
+        font-weight: bold;
+        font-size: 24px;
+
+    }
+    #talleres-agenda h3{
+        background: url("../images/bg-title-talleres-h2.png") no-repeat left bottom;
+        background-size: 80%;
+        color: #fff;
+        font-weight: 100;
+        font-size: 21px;
+        font-style: italic;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    #talleres-agenda a{
+        display: block;
+        margin:40px auto 60px auto;
+        width: 140px;
+    }
+
+    #intro-foro1{
+        text-align: center;
+        margin:0px 0px 50px 0px;
+    }
+
+    #intro-foro1 h1{
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    #intro-foro1 h1 span{
+        font-weight: 100;
+    }
+
+    #intro h2.title{
+        background: url(../images/bg-title-yellow.png) no-repeat bottom left;
+        color: #f9ef6a;
+        font-weight: bold;
+        width: 90%;
+        font-size: 21px;
+        padding-bottom: 20px;
+    } 
+    #intro p{
+        margin: 30px 0px;
+        font-size: 14px;
+    }
+
+    #quien-asiste h1{
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+        display: block;
+        width: 100%;
+        margin: 50px 0px; 
+    }
+    #quien-asiste h2{
+        background: url(../images/bg-title-yellow.png) no-repeat bottom left;
+        background-size: 90% 20px;
+        font-weight: bold;
+        font-size: 28px;
+        display: block;
+        width: 80%;
+        margin: 20px 0px; 
+        padding-bottom: 20px;
+    }
+
+    #lo-mejor h1{
+        font-size:36px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase; 
+        width: 80%;
+        display: block;margin:50px auto; 
+    }
+    #lo-mejor h1 span{
+        font-weight: 100;
+    }
+
+    #participar h2{
+        background: url(../images/bg-title-yellow.png) no-repeat bottom left;
+        color: #ffff64;
+        font-weight: bold;
+        font-size: 21px;
+        padding-bottom: 20px;
+        width: 70%;
+        display: block;
+        margin: 100px 0px;
+    }
+    #participar p{margin: 40px 10px;}
+
+    #patrocinador{
+        background: #cf0982;
+        color: #fff;
+        text-align: center;
+        padding:60px 0px;
+    }
+    #patrocinador h4{
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 4px;
+        margin: 30px 0px;
+    }
+    #patrocinador a{
+        font-weight: bold;
+        color: #fff;
+    }
+    #contacto-page h1{
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+
+    #contact-form .hs-form-required{display: none;}
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea{
+        background: #474747;
+        border:none;
+        border-radius: 10px;
+        color: #fff;
+        padding: 5px 10px;
+        text-transform: capitalize;
+        width: calc(100% - 40px);
+    }
+    #contact-form input[type="submit"],
+    #registro-form input[type="submit"]{
+        background: #e70095;
+        border-radius: 30px;
+        border:none;
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        margin: 30px 10%;
+        padding: 10px ;
+        text-align: center;
+        text-transform: uppercase;
+        width: 60%;
+    }
+    #contact-form input[type="submit"]:hover{
+        background: #bc008b;
+    }
+    #contact-form input::placeholder,
+    #contact-form textarea{
+        color: #ccc;
+        height: 120px;
+    }
+    #contact-form form{
+        margin-bottom: 50px;
+    }
+    #contact-form form .hs-error-msgs,
+    #registro-form form .hs-error-msgs{
+        background: yellow;
+        color: red !important;
+        list-style: none;
+        margin: 0px;
+        padding: 10px;
+        width: 87%;
+    }
+    #contact-form .actions{
+        margin-top: 0px;
+        margin-bottom: 0px; 
+        padding: 0px 20px;
+    }
+    #contact-form .hs-form-field{margin-top:0px;}
+
+    #footer a.a-de-p, #museos-positivos a.a-de-p{
+        color: #ccc;
+        font-size: 12px;
+        text-align: center;
+    }
+    #footer a.a-de-p:hover, #museos-positivos a.a-de-p:hover{
+        color: #fff;
+    }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .navbar-brand { max-width: 40%; }
+    .navbar-collapse{
+        background: none;
+        color: #666;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        padding:5px 10px;
+        border-bottom: 0; 
+    }
+
+    .section-top{ top: 15%; }
+    h1.title{ font-size: 34px;}
+
+    #intro{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #intro h6{ font-size: 21px; }
+    #intro .embed-responsive{margin-top:70px;}
+
+    #speakers-home h2{margin: 50px 0px; }
+
+    #speakers-home img{
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+        opacity: 0.5;
+        width: 90%;
+        margin: 20px 5% 40px 5%;
+    }
+    #speakers-home img:hover{
+        opacity: 1;
+        -webkit-filter: grayscale(0);
+        filter: none;
+    }
+
+    #speakers-home h4{
+        font-size: 32px;
+        min-height: 70px;
+    }
+    #speakers-home :nth-of-type(1) h4 {background: url("../images/left-arrow-speaker-01.png") left 8px no-repeat;}
+    #speakers-home :nth-of-type(2) h4 {background: url("../images/left-arrow-speaker-02.png") left 8px no-repeat;}
+    #speakers-home :nth-of-type(3) h4 {background: url("../images/left-arrow-speaker-03.png") left 8px no-repeat;}
+    #speakers-home :nth-of-type(4) h4 {background: url("../images/left-arrow-speaker-04.png") left 8px no-repeat;}
+    #speakers-home :nth-of-type(5) h4 {background: url("../images/left-arrow-speaker-05.png") left 8px no-repeat;}
+
+    #comprar h2{
+            font-size: 40px;
+    }
+    #comprar h3{
+        font-size: 30px;
+    }
+    #counter, #counterEng{
+        margin: 70px 20%;
+        width: 60%;
+    }
+    #counter span, #counterEng span{
+        font-size: 90px;
+    }
+    #counter span p, #counterEng span p{
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+
+    ul#menu-footer li{
+        display: inline-block;
+        float: left;
+        text-align: center;
+        width: 14.2%;
+    }
+
+    .col-2dot4  {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    #intro-sede h1{
+        margin: 0px 0px 60px 0px;
+        font-size: 40px;
+    }
+    #intro-sede h2 {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 60px 0px 30px 0px;
+    }
+    #intro-lugares {
+        margin: 40px 0px 80px 0px;
+    }
+    #intro-lugares h1{
+        font-size: 40px;
+    }
+
+    #lugares h4{ margin: 0px 0px 20px;}
+    #lugares p{font-size: 14px;}
+    #lugares iframe{margin: 0px; height: 128px;}
+    #lugares .mb50{margin-bottom: 50px;}
+
+    h1.act-title{
+        background-size: 40%;
+        color: #94c93d;
+        font-weight: bold;
+        margin: 40px 0px;
+        padding-bottom: 20px;
+        width: 100%;
+        display: block;
+    }
+    #museo-marco {
+        background: #abd7d0 url(../images/logo-museo-marco.png) no-repeat 95% 93%;
+        color: #333;
+        margin: 50px 0px 150px 0px;
+        padding-bottom: 0px;
+    }
+    #museo-marco p{font-size: 16px;}
+
+
+
+    #talleres-intro h3{
+        font-size: 44px;
+    } 
+    #talleres-intro h4{
+        display: block;
+        font-size: 36px;
+        font-weight: 100;
+        margin-bottom: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    } 
+    #talleres h1{
+        font-size: 28px;
+        max-width: 85%;
+    }
+    #talleres h2{
+        font-weight: 100;
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    #talleres a{
+        display: block;
+        text-align: center;
+        margin:40px auto; 
+    }
+    #intro-registro h2 {
+        background: url(../images/bg-title-yellow.png) no-repeat 45% 80%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
