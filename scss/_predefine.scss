@@ -61,7 +61,21 @@ h1, h2, h3, h4, h5, h6{
 	font-family: $headingFont; 
 	font-weight: bold;
 }
+.ep {
+	color: #95d695; 
+}
 
+.op {
+	color: #40b4e5; 
+}
+
+.fp {
+	color: #ff6c00; 
+}
+
+.cf {
+	color: #e70095; 
+}
 button:focus{
 	outline: none;
 	box-shadow: none;

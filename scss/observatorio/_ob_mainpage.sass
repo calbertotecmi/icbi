@@ -1,0 +1,124 @@
+// Global btn
+.article-btn
+  width: 120px
+  height: 40px
+  display: flex
+  justify-self: center
+  align-items: center
+  text-align: center
+  font-size: 14px
+  color: #273238
+  font-weight: bold
+  padding: 0 12px
+  background-color: white
+  border: 1px solid #C5CCD0
+  border-radius: 4px
+.generic-btn
+  display: flex
+  justify-self: center
+  align-items: center
+  text-align: center
+  font-size: 14px
+  color: #273238
+  font-weight: bold
+  padding: 8px
+  background-color: white
+  border: 1px solid #C5CCD0
+  border-radius: 4px
+// End global btn
+.observatorioPage
+  &--main
+    box-shadow: inset 0px 4px 24px 0px rgba(26, 26, 26, 0.07)
+  // Buttons for select categorie in mainpage
+  &--categories-btns
+    display: flex
+    justify-content: flex-start
+    padding: 35px 0
+  &--categories-btn
+    display: block
+    width: 100%
+    max-width: 145px
+    padding: 8px
+    border-radius: 4px
+    background-color: transparent
+    color: white
+    text-align: center
+    font-size: 14px
+    white-space: nowrap
+    margin-right: 10px
+    &.active-btn
+      background-color: #9A26B5
+    img.cat-logo
+      display: block
+      max-height: 30px
+      margin: 0 auto
+  // End button for select categorie in mainpage
+
+
+  // Featured article
+  &--featured-article
+    border-radius: 10px
+    padding: 24px
+    background-color: #F4F7FB
+    margin: 0 0 30px
+    .article-top-badge
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      width: 100%
+      max-width: 55px
+      min-height: 20px
+      background-color: white
+      border-radius: 4px
+      color: #5C068B
+      font-size: 12px
+      font-weight: bold
+      svg
+        display: block
+        margin-right: 5px
+    .article-title
+      margin: 16px 0 0
+      font-size: 28px
+      color: #273238
+    .article-by
+      display: block
+      color: #00534C
+      font-size: 13px
+      margin: 7px 0
+    .article-description
+      line-height: 1.75
+      font-size: 14px
+      color: #38474F
+      margin: 0 0 30px
+    // Featured article img
+    &-img
+      width: 100%
+      position: relative
+      &::before
+        content: ""
+        position: absolute
+        bottom: -10%
+        right: 0%
+        width: 80%
+        height: 75%
+        background-color: #89D5C8
+        border-radius: 5px
+        z-index: 1
+      &::after
+        content: ""
+        position: absolute
+        top: 10%
+        right: 2%
+        width: 20%
+        height: 10%
+        background-color: #8F63CC
+        border-radius: 5px
+        z-index: 2
+      img
+        display: block
+        max-width: 100%
+        position: relative
+        z-index: 3
+        left: -2%
+  // Featured article
