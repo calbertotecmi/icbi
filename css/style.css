@@ -4628,6 +4628,25 @@ h6 {
 .observatorioPage--main {
   box-shadow: inset 0px 4px 24px 0px rgba(26, 26, 26, 0.07);
 }
+.observatorioPage--titleLine {
+  margin: 55px 0 35px;
+}
+.observatorioPage--titleLine-txt {
+  font-size: 26px;
+  color: #273238;
+  margin: 0;
+}
+.observatorioPage--titleLine-link {
+  color: #8F63CC;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.observatorioPage--titleLine-link svg {
+  display: block;
+  margin-left: 10px;
+}
 .observatorioPage--categories-btns {
   display: flex;
   justify-content: flex-start;
@@ -4645,9 +4664,18 @@ h6 {
   font-size: 14px;
   white-space: nowrap;
   margin-right: 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #38474F;
+  font-weight: 600;
 }
 .observatorioPage--categories-btn.active-btn {
+  border-color: #9A26B5;
+  color: white;
+}
+.observatorioPage--categories-btn:first-child.active-btn {
   background-color: #9A26B5;
+  border-color: transparent;
 }
 .observatorioPage--categories-btn img.cat-logo {
   display: block;
@@ -4680,18 +4708,18 @@ h6 {
 }
 .observatorioPage--featured-article .article-title {
   margin: 16px 0 0;
-  font-size: 28px;
+  font-size: 25px;
   color: #273238;
 }
 .observatorioPage--featured-article .article-by {
   display: block;
   color: #00534C;
-  font-size: 13px;
+  font-size: 12px;
   margin: 7px 0;
 }
 .observatorioPage--featured-article .article-description {
   line-height: 1.75;
-  font-size: 14px;
+  font-size: 13px;
   color: #38474F;
   margin: 0 0 30px;
 }
@@ -4718,7 +4746,7 @@ h6 {
   width: 20%;
   height: 10%;
   background-color: #8F63CC;
-  border-radius: 5px;
+  border-radius: 2px;
   z-index: 2;
 }
 .observatorioPage--featured-article-img img {
@@ -4726,7 +4754,359 @@ h6 {
   max-width: 100%;
   position: relative;
   z-index: 3;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.observatorioPage--articleItem {
+  padding: 10px 15px;
+  margin-bottom: 60px;
+}
+.observatorioPage--articleItem-img {
+  max-height: 160px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block;
+}
+.observatorioPage--articleItem-img img {
+  width: 100%;
+}
+.observatorioPage--articleItem-title {
+  color: #273238;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.observatorioPage--articleItem-title a {
+  color: inherit;
+}
+.observatorioPage--articleItem-desc {
+  margin: 15px 0 20px;
+  font-size: 13px;
+  color: #38474F;
+  line-height: 1.75;
+}
+.observatorioPage--articleItem-desc a {
+  color: inherit;
+  font-size: inherit;
+}
+.observatorioPage--categorieArticles-mainItem-txt {
+  margin: 16px 0 0;
+  font-size: 21px;
+  color: #273238;
+}
+.observatorioPage--categorieArticles-mainItem-txt a {
+  color: inherit;
+}
+.observatorioPage--categorieArticles-mainItem-by {
+  display: block;
+  color: #00A499;
+  font-size: 13px;
+  margin: 7px 0;
+}
+.observatorioPage--categorieArticles-mainItem-desc {
+  line-height: 1.75;
+  font-size: 13px;
+  color: #38474F;
+}
+.observatorioPage--categorieArticles-mainItem-desc a {
+  color: inherit;
+}
+.observatorioPage--categorieArticles-mainItem-img {
+  width: 100%;
+  position: relative;
+}
+.observatorioPage--categorieArticles-mainItem-img img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  z-index: 3;
   left: -2%;
+  border-radius: 5px;
+}
+.observatorioPage--categorieArticles-othersItems {
+  margin: 45px 0;
+}
+.observatorioPage--categorieArticles-othersItems-img {
+  border-radius: 5px;
+}
+.observatorioPage--categorieArticles-othersItems-link {
+  font-size: 15px;
+  color: #273238;
+  font-weight: bold;
+}
+.observatorioPage--ctaImg {
+  display: block;
+  margin: 50px 0 0px;
+}
+.observatorioPage--ctaImg img {
+  width: 100%;
+}
+.observatorioPage--newsletterBlock {
+  background-color: #5C068B;
+  margin: 55px 0;
+  padding: 100px 105px;
+  border-radius: 16px;
+}
+.observatorioPage--newsletterBlock-title {
+  color: white;
+  font-size: 30px;
+  margin: 0 0 15px;
+}
+.observatorioPage--newsletterBlock-desc {
+  color: white;
+  font-size: 17px;
+  line-height: 1.75;
+}
+.observatorioPage--newsletterBlock-form form {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  display: block;
+}
+.observatorioPage--newsletterBlock-form form fieldset.form-columns-3 {
+  display: block;
+}
+.observatorioPage--newsletterBlock-form form fieldset.form-columns-3 .hs-form-field {
+  width: 100%;
+  float: none;
+}
+.observatorioPage--newsletterBlock-form form fieldset.form-columns-3 .hs-form-field label {
+  display: none;
+}
+.observatorioPage--newsletterBlock-form form .input {
+  margin: 0 !important;
+}
+.observatorioPage--newsletterBlock-form form .hs_acepto_aviso_de_privacidad ul li label {
+  display: flex;
+}
+.observatorioPage--newsletterBlock-form form .hs_acepto_aviso_de_privacidad ul li label .hs-input {
+  width: auto !important;
+  height: auto !important;
+}
+.observatorioPage--newsletterBlock-form form .hs_acepto_aviso_de_privacidad ul li label span {
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.3;
+  padding-left: 10px;
+}
+.observatorioPage--newsletterBlock-form form .hs_acepto_aviso_de_privacidad ul li label span a {
+  color: inherit;
+  text-decoration: underline;
+  color: inherit;
+  font-size: inherit;
+}
+.observatorioPage--newsletterBlock-form form .hs-input {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 36px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.0509803922);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.0509803922);
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 15px;
+  color: rgba(43, 43, 43, 0.7);
+}
+.observatorioPage--newsletterBlock-form form .hs-input::placeholder {
+  color: rgba(43, 43, 43, 0.7);
+}
+.observatorioPage--newsletterBlock-form form .hs-input[type=radio]:after, .observatorioPage--newsletterBlock-form form .hs-input[type=checkbox]:after {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0509803922);
+  height: 9px;
+  left: 0;
+  top: 0px;
+  width: 9px;
+}
+.observatorioPage--newsletterBlock-form form .hs-button {
+  background-color: #9A26B5;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #273238;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #9A26B5;
+  border-radius: 4px;
+}
+.observatorioPage--sidebar {
+  padding: 120px 0 60px;
+  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.observatorioPage--sidebar-box {
+  border-radius: 6px;
+  background: #F4F7FB;
+  box-shadow: 0px 5px 10.9px 0px rgba(39, 50, 56, 0.1);
+  padding: 30px 20px;
+}
+.observatorioPage--sidebar-box-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #273238;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.observatorioPage--sidebar-box-title svg {
+  display: block;
+  margin-left: auto;
+}
+.observatorioPage--sidebar-box-search h5 {
+  font-size: 15px;
+  font-weight: normal;
+  color: #273238;
+}
+.observatorioPage--sidebar-box-search .search-form {
+  position: relative;
+  margin-top: 10px;
+}
+.observatorioPage--sidebar-box-search .search-form input[type=text] {
+  border-radius: 4px;
+  border: 1px solid #E0EAF5;
+  position: relative;
+  background-color: white;
+  padding: 0 12px;
+  width: 100%;
+  height: 45px;
+  font-size: 13px;
+  outline: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+.observatorioPage--sidebar-box-search .search-form input[type=text]::focus, .observatorioPage--sidebar-box-search .search-form input[type=text]::active {
+  outline: 0 !important;
+}
+.observatorioPage--sidebar-box-search .search-form svg {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  z-index: 2;
+}
+.observatorioPage--sidebar-box-search .search-form button,
+.observatorioPage--sidebar-box-search .search-form input[type=button] {
+  border-radius: 4px;
+  background: #9A26B5;
+  width: 100%;
+  display: block;
+  border: 0;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 15px;
+}
+.observatorioPage--articles-pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 50px;
+}
+.observatorioPage--articles-pagination-list .pagination-link {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #E0EAF5;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  color: #38474F;
+}
+.observatorioPage--articles-pagination-list .pagination-link.active {
+  color: white;
+  border-color: #8F63CC;
+  background-color: #8F63CC;
+}
+.observatorioPage--articles-pagination-list .pagination-link.arrow {
+  border: 0;
+}
+.observatorioPage--searchpage-mainsearch {
+  background-color: #F4F5F6;
+  box-shadow: inset 0px 4px 24px 0px rgba(26, 26, 26, 0.07);
+  padding: 80px 0;
+}
+.observatorioPage--searchpage-mainsearch h1,
+.observatorioPage--searchpage-mainsearch .intro-title,
+.observatorioPage--searchpage-mainsearch .search-form {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.observatorioPage--searchpage-mainsearch h1 {
+  color: #273238;
+  font-size: 28px;
+}
+.observatorioPage--searchpage-mainsearch .search-form {
+  position: relative;
+  margin-top: 10px;
+}
+.observatorioPage--searchpage-mainsearch .search-form input[type=text] {
+  border-radius: 4px;
+  border: 1px solid #E0EAF5;
+  position: relative;
+  background-color: white;
+  padding: 0 12px;
+  width: 100%;
+  height: 45px;
+  font-size: 13px;
+  outline: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+.observatorioPage--searchpage-mainsearch .search-form input[type=text]::focus, .observatorioPage--searchpage-mainsearch .search-form input[type=text]::active {
+  outline: 0 !important;
+}
+.observatorioPage--searchpage-mainsearch .search-form svg {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  z-index: 2;
+}
+.observatorioPage--searchpage-mainsearch .search-form button,
+.observatorioPage--searchpage-mainsearch .search-form input[type=button] {
+  border-radius: 4px;
+  background: #9A26B5;
+  width: 100%;
+  display: block;
+  border: 0;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 15px;
+}
+.observatorioPage--searchpage-articles-title {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+.observatorioPage--searchpage-articles-title-texts {
+  display: block;
+  margin: 0 auto;
+}
+.observatorioPage--searchpage-articles-title h2, .observatorioPage--searchpage-articles-title p {
+  color: #586872;
+  margin: 0;
+  z-index: 3;
+  position: relative;
+}
+.observatorioPage--searchpage-articles-title h2 {
+  margin-bottom: 15px;
+  font-size: 29px;
+}
+.observatorioPage--searchpage-articles-title p {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
