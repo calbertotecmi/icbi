@@ -5145,10 +5145,25 @@ h6 {
 .observatorioPage--articlePage {
   padding: 35px 0;
 }
+.observatorioPage--articlePage .observatorioPage--articles-grid {
+  margin-top: 50px;
+}
+.observatorioPage--articlePage .observatorioPage--articles-grid h5 {
+  color: #273238;
+  font-size: 24px;
+}
+.observatorioPage--articlePage-body p, .observatorioPage--articlePage-body ul, .observatorioPage--articlePage-body ul li, .observatorioPage--articlePage-body span {
+  font-size: 15px;
+  line-height: 2;
+  color: #38474F;
+}
+.observatorioPage--articlePage-body p {
+  margin: 20px 0;
+}
 .observatorioPage--articlePage-breadcrumbs {
   display: flex;
   justify-content: flex-start;
-  padding: 0;
+  padding: 0 0 15px;
   margin: 0;
 }
 .observatorioPage--articlePage-breadcrumb {
@@ -5174,7 +5189,145 @@ h6 {
 }
 .observatorioPage--articlePage-breadcrumb-link {
   color: #7D38A2;
-  font-size: 15px;
+  font-size: 14px;
+}
+.observatorioPage--articlePage-head .articleMainTitle {
+  font-size: 28px;
+  color: #273238;
+}
+.observatorioPage--articlePage-whoWhen {
+  padding: 25px 0;
+}
+.observatorioPage--articlePage-whoWhen p {
+  font-size: 14px;
+  margin: 0;
+  color: #38474F;
+}
+.observatorioPage--articlePage-whoWhen-time {
+  text-align: center;
+}
+.observatorioPage--articlePage-whoWhen-when {
+  text-align: right;
+}
+.observatorioPage--likesBlock h3 {
+  margin: 40px 0 20px;
+  color: #273238;
+  font-size: 24px;
+}
+.observatorioPage--likesBlock-btns {
+  width: 100%;
+  display: flex;
+}
+.observatorioPage--likesBlock-btnLike {
+  width: 100%;
+  max-width: 60px;
+  height: 32px;
+  border: 1px solid #7D38A2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+.observatorioPage--likesBlock-btnLike.liked svg,
+.observatorioPage--likesBlock-btnLike.liked path,
+.observatorioPage--likesBlock-btnLike.liked g {
+  fill: #7D38A2;
+  stroke: #7D38A2;
+}
+.observatorioPage--likesBlock-btnLike span {
+  color: #7D38A2;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1;
+}
+.observatorioPage--likesBlock-btnLike svg {
+  display: block;
+  margin: 0 auto;
+}
+.observatorioPage--likesBlock-btnShare {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #7D38A2;
+  border: 1px solid transparent;
+}
+.observatorioPage--likesBlock-btnShare svg,
+.observatorioPage--likesBlock-btnShare g,
+.observatorioPage--likesBlock-btnShare path {
+  fill: white;
+}
+
+.swiper-pagination {
+  position: relative !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7D38A2 !important;
+}
+
+@media (min-width: 993px) {
+  .swiper-pagination {
+    display: none !important;
+  }
+
+  .observatorioPage--articles-grid .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    transform: none !important;
+  }
+  .observatorioPage--articles-grid .swiper-slide {
+    width: 100%;
+    max-width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .observatorioPage--searchpage-articles-title {
+    padding: 30px 10px;
+  }
+  .observatorioPage--searchpage-articles-title h2 {
+    font-size: 24px;
+  }
+  .observatorioPage--searchpage-articles-title p {
+    font-size: 16px;
+  }
+  .observatorioPage--searchpage-articles-title .decoration {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .observatorioPage--searchpage-mainsearch {
+    padding: 55px 0;
+  }
+  .observatorioPage--searchpage-mainsearch h1 {
+    font-size: 24px;
+  }
+  .observatorioPage--searchpage-mainsearch .search-form {
+    margin-top: 15px;
+  }
+  .observatorioPage--articles-grid .results-text {
+    text-align: center;
+    padding-top: 2rem !important;
+  }
+  .observatorioPage--searchpage-articles-title {
+    padding: 30px 10px;
+  }
+  .observatorioPage--searchpage-articles-title h2 {
+    font-size: 22px;
+  }
+  .observatorioPage--searchpage-articles-title p {
+    font-size: 14px;
+  }
+  .observatorioPage--searchpage-articles-title .decoration {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
