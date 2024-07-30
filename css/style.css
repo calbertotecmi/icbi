@@ -4999,6 +4999,40 @@ h6 {
   height: 40px;
   margin-top: 15px;
 }
+.observatorioPage--sidebar-recentArticles .title_sidebar {
+  font-size: 18px;
+  color: #38474F;
+  padding: 45px 0 15px;
+  font-weight: 600;
+}
+.observatorioPage--sidebar-article {
+  margin-bottom: 40px;
+}
+.observatorioPage--sidebar-article:last-child {
+  margin-bottom: 0;
+}
+.observatorioPage--sidebar-articlePhoto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.observatorioPage--sidebar-articlePhoto img {
+  width: 100%;
+  display: block;
+}
+.observatorioPage--sidebar-articleLink {
+  color: #273238;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  display: inline-block;
+}
+.observatorioPage--sidebar-articleLink a {
+  color: inherit;
+}
 .observatorioPage--articles-pagination-list {
   display: flex;
   align-items: center;
@@ -5107,6 +5141,40 @@ h6 {
 .observatorioPage--searchpage-articles-title p {
   font-weight: 600;
   font-size: 20px;
+}
+.observatorioPage--articlePage {
+  padding: 35px 0;
+}
+.observatorioPage--articlePage-breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+.observatorioPage--articlePage-breadcrumb {
+  margin-right: 5px;
+  padding-right: 15px;
+  position: relative;
+}
+.observatorioPage--articlePage-breadcrumb::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.observatorioPage--articlePage-breadcrumb:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.observatorioPage--articlePage-breadcrumb:last-child::after {
+  display: none;
+}
+.observatorioPage--articlePage-breadcrumb:last-child .observatorioPage--articlePage-breadcrumb-link {
+  color: #38474F;
+}
+.observatorioPage--articlePage-breadcrumb-link {
+  color: #7D38A2;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

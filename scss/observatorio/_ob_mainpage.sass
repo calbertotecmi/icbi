@@ -381,6 +381,37 @@
             height: 40px
             margin-top: 15px          
           
+    // Recent Articles in sidebar
+    &-recentArticles
+      .title_sidebar // title
+        font-size: 18px
+        color: #38474F
+        padding: 45px 0 15px
+        font-weight: 600
+    &-article
+      margin-bottom: 40px
+      &:last-child
+        margin-bottom: 0
+    // Article list
+    &-articlePhoto
+      width: 100%
+      display: flex
+      justify-content: center
+      overflow: hidden
+      border-radius: 5px
+      img
+        width: 100%
+        display: block
+    &-articleLink
+      color: #273238
+      font-size: 14px
+      font-weight: 700
+      line-height: 1.5
+      margin: 0
+      display: inline-block
+      a
+        color: inherit
+  
   // Pagination
   &--articles-pagination
     &-list
@@ -482,3 +513,33 @@
       p
         font-weight: 600
         font-size: 20px
+
+
+  // Article page styles
+  &--articlePage
+    padding: 35px 0
+    // Breadcrumbs
+    &-breadcrumbs
+      display: flex
+      justify-content: flex-start
+      padding: 0
+      margin: 0
+    &-breadcrumb
+      margin-right: 5px
+      padding-right: 15px
+      position: relative
+      &::after
+        content: "|"
+        position: absolute
+        right: 0
+        top: 0
+      &:last-child
+        margin-right: 0
+        padding-right: 0     
+        &::after
+          display: none   
+        .observatorioPage--articlePage-breadcrumb-link
+          color: #38474F
+      &-link
+        color: #7D38A2
+        font-size: 15px
