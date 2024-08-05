@@ -45,7 +45,7 @@
       margin: 0
     &-link
       color: #8F63CC
-      font-size: 14px
+      font-size: 12px
       display: flex
       align-items: center
       justify-content: flex-end
@@ -55,9 +55,12 @@
   // Title on each section with see more end
   // Buttons for select categorie in mainpage
   &--categories-btns
-    display: flex
-    justify-content: flex-start
     padding: 35px 0
+    &-desk
+      display: flex
+      justify-content: flex-start
+    &-mobile
+      display: none
   &--categories-btn
     display: block
     width: 100%
@@ -131,18 +134,18 @@
       &::before
         content: ""
         position: absolute
-        bottom: -10%
-        right: 0%
-        width: 80%
-        height: 75%
+        bottom: -8%
+        right: -3%
+        width: 60%
+        height: 60%
         background-color: #89D5C8
         border-radius: 5px
         z-index: 1
       &::after
         content: ""
         position: absolute
-        top: 10%
-        right: 2%
+        top: 15%
+        right: -3%
         width: 20%
         height: 10%
         background-color: #8F63CC
@@ -193,7 +196,7 @@
     &-mainItem
       &-txt
         margin: 16px 0 0
-        font-size: 21px
+        font-size: 18px
         color: #273238
         a
           color: inherit
@@ -221,12 +224,20 @@
           border-radius: 5px
     &-othersItems
       margin: 45px 0
+      .observatorioPage--titleLine-link
+        display: none
+      &-grid
+        display: flex
+        align-items: center
       &-img
         border-radius: 5px
       &-link
-        font-size: 15px
+        font-size: 13px
         color: #273238
         font-weight: bold
+        line-height: 1.75
+        display: inline-block
+        margin-left: 20px
 
   // CTA
   &--ctaImg
@@ -239,7 +250,7 @@
   &--newsletterBlock
     background-color: #5C068B
     margin: 55px 0
-    padding: 100px 105px
+    padding: 80px
     border-radius: 16px
     &-title
       color: white
@@ -315,8 +326,6 @@
           color: white
           border: 1px solid #9A26B5
           border-radius: 4px
-
-
 
   // Sidebar          
   &--sidebar
@@ -441,8 +450,6 @@
           border: 0
   // Pagination end
 
-
-
   // Search page
   &--searchpage
     &-mainsearch
@@ -514,7 +521,6 @@
         font-weight: 600
         font-size: 20px
 
-
   // Article page styles
   &--articlePage
     padding: 35px 0
@@ -538,8 +544,9 @@
     &-breadcrumbs
       display: flex
       justify-content: flex-start
-      padding: 0 0 15px
+      padding: 0 0 
       margin: 0
+      width: 100%
     &-breadcrumb
       margin-right: 5px
       padding-right: 15px
@@ -612,11 +619,12 @@
         display: block
         margin: 0 auto
     &-btnShare
-      margin-left: 10px
+      margin-left: 5px
       display: flex
       justify-content: center
       align-items: center
-      width: 32px
+      width: 100%
+      max-width: 32px
       height: 32px
       border-radius: 4px
       background-color: #7D38A2
@@ -627,9 +635,131 @@
         fill: white
 
 
+  // Actions on mobile
+  &--contentActions
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    width: 100%
+  &--searchBoxMobile
+    // display: none  
+    width: 180px
+    margin-left: auto
+    display: none
+    &-btn
+      width: 40px
+      height: 40px
+      background-color: #fdfdfd
+      border: 1px solid #C5CCD0
+      border-radius: 4px
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      margin-left: auto
+      .icon_search
+        display: block
+      .icon_close
+        display: none
+      &.active
+        .icon_search
+          display: none
+        .icon_close
+          display: block
+    .searchInput
+      border-radius: 4px
+      border: 1px solid #C5CCD0
+      position: relative
+      background-color: white
+      padding: 0 12px
+      width: 100%
+      height: 40px
+      font-size: 13px
+      outline: 0 !important
+      position: relative
+      z-index: 1
+      margin-top: 10px
+      display: none
+      &.active
+        display: block
+  
+  
+  &--searchBox-mobile
+    background-color: #F4F7FB
+    padding: 20px
+    display: none
+    align-items: center
+    margin: 10px 0
+    &.active
+      display: flex
+    .searchInput
+      border-radius: 4px
+      border: 1px solid #C5CCD0
+      position: relative
+      background-color: white
+      padding: 0 12px
+      width: 85%
+      margin-right: 15px
+      height: 40px
+      font-size: 13px
+      outline: 0 !important
+      position: relative
+      z-index: 1
+    button
+      display: block
+      width: 100%
+      max-width: 100px
+      border-radius: 4px
+      height: 40px
+      background-color: #9A26B5
+      color: white
+      text-align: center
+      font-size: 14px
+      white-space: nowrap
+      border: 1px solid #9A26B5
+      border-radius: 8px
+      color: #fff
+      font-weight: 600      
+  // Actions on mobile
 
 
-
+// Modal
+.modalFilter
+  z-index: 222222222
+  .modal-header
+    border: 0
+  .modal-body
+    h3
+      color: #273238
+    .modalBtnFilter
+      display: block
+      width: 100%
+      max-width: 145px
+      padding: 8px
+      border-radius: 4px
+      background-color: transparent
+      color: white
+      text-align: center
+      font-size: 14px
+      white-space: nowrap
+      margin-right: 10px
+      border: 1px solid transparent
+      border-radius: 8px
+      color: #38474F
+      font-weight: 600
+      margin: 0 auto 15px
+      &.active-btn
+        border-color: #9A26B5
+        color: white
+      &.btnAll
+        &.active-btn
+          background-color: #9A26B5
+          border-color: transparent
+      img.cat-logo
+        display: block
+        max-height: 30px
+        margin: 0 auto      
+// Modal
 
 
 // Swiper custom styles
@@ -640,25 +770,91 @@
 // Swiper custom styles
 
 // Responsive
+.observatorioPage--searchBoxMobile-btn
+  display: none
+
+@media (min-width: 768px) and (max-width: 1280px)
+  .observatorioPage
+    &--articlePage
+      &-whoWhen 
+        p
+          font-size: 12px
+      &-body 
+        p
+          font-size: 15px
+
 // Up to 990
 @media (min-width: 993px)
   .swiper-pagination
     display: none!important
+
+
   .observatorioPage
-    &--articles-grid
-      .swiper
-        &-wrapper
-          display: flex
-          flex-wrap: wrap
-          transform: none!important
-        &-slide
-          width: 100%
-          max-width: 25%
+
+    &--searchpage
+      .observatorioPage--articles-grid
+        .swiper
+          &-wrapper
+            display: flex
+            flex-wrap: wrap
+            transform: none!important
+          &-slide
+            width: 100%
+            max-width: 25%
  
+// Tablet large
+@media (max-width: 991px)
+  // Hide sidebar
+  .sidebarCol
+    display: none
+  .observatorioPage
+    &--searchBoxMobile
+      display: block
+      position: relative
+      &-btn
+        display: flex
+
+
+    // Buttons filters
+    &--categories-btns
+      &-desk
+        display: none
+      &-mobile
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        width: 100%
+        .observatorioPage--searchBoxMobile-btn
+          margin-left: 0
+    // Buttons filters
+
+
+// Start responsive for mobile devices    
 // Tablet
 @media (max-width: 767px)
   // Search page
   .observatorioPage
+    &--main
+      // Article
+      #observatorioPage--articlePage-head-row
+        display: flex
+        flex-flow: column
+        margin-bottom: 30px
+        .observatorioPage--articlePage-head-title
+          order: 1
+        .observatorioPage--articlePage-head-data
+          order: 2
+        .observatorioPage--articlePage-head-sharediv
+          order: 3
+    &--articlePage
+      &-whoWhen 
+        padding: 5px 0 20px
+        p
+          text-align: left!important
+    &--likesBlock
+      &-btnShare
+        margin-left: 20px
+
     // Search results
     &--searchpage-articles-title
       padding: 30px 10px
@@ -669,6 +865,60 @@
       .decoration
         display: none
     // Search results 
+
+
+
+    // Article 
+    &--articlePage
+      &-body 
+        p
+          font-size: 14px  
+    // Article 
+
+    // List articles
+    &--featured-article
+      .row
+        flex-flow: column-reverse
+      &-img
+        margin-bottom: 30px
+        img
+          max-width: 95%
+          width: 95%
+    &--titleLine
+      margin: 20px 0
+      .observatorioPage--titleLine-link
+        display: none
+      &-txt
+        font-size: 22px
+      &-link
+        justify-content: flex-start
+        margin-top: 10px
+    &--categorieArticles
+      &-mainItem
+        &-img 
+          img
+            left: 0
+            width: 100%
+      &-othersItems
+        .observatorioPage--titleLine-link
+          display: flex
+        &-grid
+          margin-bottom: 20px
+    // List articles
+    
+
+    // Newsletter
+    &--newsletterBlock
+      padding: 40px
+      &-title
+        font-size: 24px
+        text-align: center
+      &-desc
+        text-align: center
+        font-size: 14px
+    // Newsletter
+
+
 
 // Mobile regular
 @media (max-width: 560px)
@@ -696,6 +946,68 @@
         display: none
     // Search results
 
+    // Article 
+    &--articlePage
+      &-body 
+        p
+          font-size: 14px  
+    // Article 
+
+    // List articles
+    &--featured-article
+      .row
+        flex-flow: column-reverse
+      &-img
+        margin-bottom: 30px
+        img
+          max-width: 95%
+          width: 95%
+    &--titleLine
+      margin: 20px 0
+      .observatorioPage--titleLine-link
+        display: none
+      &-txt
+        font-size: 22px
+      &-link
+        justify-content: flex-start
+        margin-top: 10px
+    &--categorieArticles
+      &-mainItem
+        &-img 
+          img
+            left: 0
+            width: 100%
+      &-othersItems
+        .observatorioPage--titleLine-link
+          display: flex
+        &-grid
+          margin-bottom: 20px
+    // List articles
+    
+
+    // Newsletter
+    &--newsletterBlock
+      padding: 40px
+      &-title
+        font-size: 24px
+        text-align: left
+      &-desc
+        text-align: left
+        font-size: 14px
+    // Newsletter
+
+
+  
 
 // Mobile small
 @media (max-width: 380px)
+  
+  .observatorioPage
+
+    // Article 
+    &--articlePage
+      &-body 
+        p
+          font-size: 13px  
+          line-height: 1.5
+    // Article 

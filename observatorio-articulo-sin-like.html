@@ -34,6 +34,9 @@
     <!-- style newsletter -->
     <link rel="stylesheet" href="css/newsletter.css">
 
+    <!-- Swipper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
 
 </head>
 
@@ -145,33 +148,85 @@
             <div class="row">
 
                 <!--================ Posts List =================-->
-                <div class="col col-lg-8">
+                <div class="col col-sm-12 col-lg-8">
 
 
                     <!-- Start Article -->
                     <div class="observatorioPage--articlePage">
 
-                        <!-- Article breadcrumbs -->
-                        <ul class="observatorioPage--articlePage-breadcrumbs">
-                            <li class="observatorioPage--articlePage-breadcrumb">
-                                <a href="#!" class="observatorioPage--articlePage-breadcrumb-link">Museos Positivos</a>
-                            </li>
-                            <li class="observatorioPage--articlePage-breadcrumb">
-                                <a href="#!" class="observatorioPage--articlePage-breadcrumb-link">Nota</a>
-                            </li>
-                        </ul>
-                        <!-- Article breadcrumbs -->
+                        <!-- Article breadcrumbs and search for mobile -->
+                        <div class="observatorioPage--contentActions">
+                            <ul class="observatorioPage--articlePage-breadcrumbs">
+                                <li class="observatorioPage--articlePage-breadcrumb">
+                                    <a href="#!" class="observatorioPage--articlePage-breadcrumb-link">Museos
+                                        Positivos</a>
+                                </li>
+                                <li class="observatorioPage--articlePage-breadcrumb">
+                                    <a href="#!" class="observatorioPage--articlePage-breadcrumb-link">Nota</a>
+                                </li>
+                            </ul>
+                            <div class="observatorioPage--searchBoxMobile-btn" >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon_search" width="25" height="25" viewBox="0 0 25 25"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_2011_965)">
+                                        <path
+                                            d="M16.1458 14.5833H15.3229L15.0312 14.3021C16.0521 13.1146 16.6667 11.5729 16.6667 9.89583C16.6667 6.15625 13.6354 3.125 9.89583 3.125C6.15625 3.125 3.125 6.15625 3.125 9.89583C3.125 13.6354 6.15625 16.6667 9.89583 16.6667C11.5729 16.6667 13.1146 16.0521 14.3021 15.0312L14.5833 15.3229V16.1458L19.7917 21.3438L21.3438 19.7917L16.1458 14.5833ZM9.89583 14.5833C7.30208 14.5833 5.20833 12.4896 5.20833 9.89583C5.20833 7.30208 7.30208 5.20833 9.89583 5.20833C12.4896 5.20833 14.5833 7.30208 14.5833 9.89583C14.5833 12.4896 12.4896 14.5833 9.89583 14.5833Z"
+                                            fill="#38474F" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2011_965">
+                                            <rect width="25" height="25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon_close" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                    <g clip-path="url(#clip0_2011_2022)">
+                                      <path d="M20.2913 7.17706L18.8226 5.70831L12.9997 11.5312L7.17676 5.70831L5.70801 7.17706L11.5309 13L5.70801 18.8229L7.17676 20.2916L12.9997 14.4687L18.8226 20.2916L20.2913 18.8229L14.4684 13L20.2913 7.17706Z" fill="#38474F"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_2011_2022">
+                                        <rect width="25" height="25" fill="white" transform="translate(0.5 0.5)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </div>                              
+                        </div>
+                            <div class="observatorioPage--searchBox-mobile">
+                                <input type="text" placeholder="Escribe aquí" class="searchInput">
+                                <button>Buscar</button>
+                            </div>                        
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+    
+                                    const btnSearch_mobile = document.querySelector('.observatorioPage--searchBoxMobile-btn');
+                                    const inputSearch_mobile = document.querySelector('.observatorioPage--searchBox-mobile');
+    
+    
+                                    btnSearch_mobile.addEventListener('click', (btn) => {
+                                        btn.currentTarget.classList.toggle('active');
+                                        inputSearch_mobile.classList.toggle('active');
+                                    });
+    
+                                })
+                            </script>                            
+
+                        <!-- Article breadcrumbs and search for mobile -->
 
                         <!-- Article head -->
                         <div class="observatorioPage--articlePage-head">
 
                             <!-- Article title and likes block -->
-                            <div class="row align-items-center">
-                                <div class="col col-lg-10">
-                                    <h1 class="articleMainTitle">El uso ético de la inteligencia artificial generativa entre los estudiantes
-                                        universitarios</h1>
+                            <div class="row align-items-center" id="observatorioPage--articlePage-head-row">
+                                <!-- The clases are used on responsive, need that for design structure in figma. -->
+                                <div
+                                    class="col col-12 col-sm-12 col-md-10 col-lg-10 observatorioPage--articlePage-head-title">
+                                    <h1 class="articleMainTitle">
+                                        El uso ético de la inteligencia artificial generativa entre los estudiantes
+                                        universitarios
+                                    </h1>
                                 </div>
-                                <div class="col col-lg-2">
+                                <div
+                                    class="col col-12 col-sm-12 col-md-2 col-lg-2 observatorioPage--articlePage-head-sharediv">
                                     <div class="observatorioPage--likesBlock">
 
                                         <div class="observatorioPage--likesBlock-btns">
@@ -221,29 +276,36 @@
 
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Article title and likes block -->
 
-                            <!-- Who write and when -->
-                            <div class="observatorioPage--articlePage-whoWhen">
+                                <div class="col col-12 observatorioPage--articlePage-head-data">
+                                    <!-- Who write and when -->
+                                    <div class="observatorioPage--articlePage-whoWhen">
 
-                                <div class="row">
+                                        <div class="row">
 
-                                    <div class="col col-lg-3">
-                                        <p class="observatorioPage--articlePage-whoWhen-who">Por: Nombre de autor</p>
+                                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3">
+                                                <p class="observatorioPage--articlePage-whoWhen-who">Por: Nombre de
+                                                    autor</p>
+                                            </div>
+                                            <div class="col col-12 col-sm-12 col-md-4 col-lg-6">
+                                                <p class="observatorioPage--articlePage-whoWhen-time">Lectura aproximada
+                                                    de 5
+                                                    minutos.</p>
+                                            </div>
+                                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3">
+                                                <p class="observatorioPage--articlePage-whoWhen-when">3 de mayo 2024</p>
+                                            </div>
+
+                                        </div>
+
                                     </div>
-                                    <div class="col col-lg-6">
-                                        <p class="observatorioPage--articlePage-whoWhen-time">Lectura aproximada de 5
-                                            minutos.</p>
-                                    </div>
-                                    <div class="col col-lg-3">
-                                        <p class="observatorioPage--articlePage-whoWhen-when">3 de mayo 2024</p>
-                                    </div>
-
+                                    <!-- Who write and when -->
                                 </div>
 
                             </div>
-                            <!-- Who write and when -->
+                            <!-- Article title and likes block -->
+
+
 
                         </div>
                         <!-- Article head -->
@@ -292,7 +354,7 @@
                         </div>
                         <!-- Article body -->
 
-                        
+
                         <!-- Likes block -->
                         <div class="observatorioPage--likesBlock">
 
@@ -344,83 +406,147 @@
                         </div>
                         <!-- Likes block -->
 
-                    <!-- Grid Posts -->
-                    <div class="observatorioPage--articles-grid ">
+                        <!-- Grid Posts -->
+                        <div class="observatorioPage--articles-grid ">
+                            <h5 class="mb-4">
+                                Notas que te pudieran interesar
+                            </h5>
 
-                        <h5 class="mb-4">
-                            Notas que te pudieran interesar
-                        </h5>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="observatorioPage--articleItem">
+                                            <a class="observatorioPage--articleItem-img" href="#!">
+                                                <img src="https://placehold.co/300x160" alt="">
+                                            </a>
+                                            <h3 class="observatorioPage--articleItem-title">
+                                                <a href="#!">
+                                                    Opinión | La pedagogía, entre el mundo real y el mundo platónico
+                                                </a>
+                                            </h3>
+                                            <p class="observatorioPage--articleItem-desc">
+                                                <a href="#!">
+                                                    En esta nueva entrega de la serie “Lecturas para la educación”,
+                                                    Andrés
+                                                    García Barrios analiza dos grandes libros filosóficos sobre los
+                                                    inicios
+                                                    de
+                                                    la pedagogía.
+                                                </a>
+                                            </p>
+                                            <a href="#!" class="article-btn">
+                                                Conocer más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="observatorioPage--articleItem">
+                                            <a class="observatorioPage--articleItem-img" href="#!">
+                                                <img src="https://placehold.co/300x160" alt="">
+                                            </a>
+                                            <h3 class="observatorioPage--articleItem-title">
+                                                <a href="#!">
+                                                    Opinión | La pedagogía, entre el mundo real y el mundo platónico
+                                                </a>
+                                            </h3>
+                                            <p class="observatorioPage--articleItem-desc">
+                                                <a href="#!">
+                                                    En esta nueva entrega de la serie “Lecturas para la educación”,
+                                                    Andrés
+                                                    García Barrios analiza dos grandes libros filosóficos sobre los
+                                                    inicios
+                                                    de
+                                                    la pedagogía.
+                                                </a>
+                                            </p>
+                                            <a href="#!" class="article-btn">
+                                                Conocer más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="observatorioPage--articleItem">
+                                            <a class="observatorioPage--articleItem-img" href="#!">
+                                                <img src="https://placehold.co/300x160" alt="">
+                                            </a>
+                                            <h3 class="observatorioPage--articleItem-title">
+                                                <a href="#!">
+                                                    Opinión | La pedagogía, entre el mundo real y el mundo platónico
+                                                </a>
+                                            </h3>
+                                            <p class="observatorioPage--articleItem-desc">
+                                                <a href="#!">
+                                                    En esta nueva entrega de la serie “Lecturas para la educación”,
+                                                    Andrés
+                                                    García Barrios analiza dos grandes libros filosóficos sobre los
+                                                    inicios
+                                                    de
+                                                    la pedagogía.
+                                                </a>
+                                            </p>
+                                            <a href="#!" class="article-btn">
+                                                Conocer más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="observatorioPage--articleItem">
+                                            <a class="observatorioPage--articleItem-img" href="#!">
+                                                <img src="https://placehold.co/300x160" alt="">
+                                            </a>
+                                            <h3 class="observatorioPage--articleItem-title">
+                                                <a href="#!">
+                                                    Opinión | La pedagogía, entre el mundo real y el mundo platónico
+                                                </a>
+                                            </h3>
+                                            <p class="observatorioPage--articleItem-desc">
+                                                <a href="#!">
+                                                    En esta nueva entrega de la serie “Lecturas para la educación”,
+                                                    Andrés
+                                                    García Barrios analiza dos grandes libros filosóficos sobre los
+                                                    inicios
+                                                    de
+                                                    la pedagogía.
+                                                </a>
+                                            </p>
+                                            <a href="#!" class="article-btn">
+                                                Conocer más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="observatorioPage--articleItem">
+                                            <a class="observatorioPage--articleItem-img" href="#!">
+                                                <img src="https://placehold.co/300x160" alt="">
+                                            </a>
+                                            <h3 class="observatorioPage--articleItem-title">
+                                                <a href="#!">
+                                                    Opinión | La pedagogía, entre el mundo real y el mundo platónico
+                                                </a>
+                                            </h3>
+                                            <p class="observatorioPage--articleItem-desc">
+                                                <a href="#!">
+                                                    En esta nueva entrega de la serie “Lecturas para la educación”,
+                                                    Andrés
+                                                    García Barrios analiza dos grandes libros filosóficos sobre los
+                                                    inicios
+                                                    de
+                                                    la pedagogía.
+                                                </a>
+                                            </p>
+                                            <a href="#!" class="article-btn">
+                                                Conocer más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination">
 
-                        <div class="row">
-                            <div class="col col-lg-4">
-                                <div class="observatorioPage--articleItem">
-                                    <a class="observatorioPage--articleItem-img" href="#!">
-                                        <img src="https://placehold.co/300x160" alt="">
-                                    </a>
-                                    <h3 class="observatorioPage--articleItem-title">
-                                        <a href="#!">
-                                            Opinión | La pedagogía, entre el mundo real y el mundo platónico
-                                        </a>
-                                    </h3>
-                                    <p class="observatorioPage--articleItem-desc">
-                                        <a href="#!">
-                                            En esta nueva entrega de la serie “Lecturas para la educación”, Andrés
-                                            García Barrios analiza dos grandes libros filosóficos sobre los inicios de
-                                            la pedagogía.
-                                        </a>
-                                    </p>
-                                    <a href="#!" class="article-btn">
-                                        Conocer más
-                                    </a>
                                 </div>
-                            </div>
-                            <div class="col col-lg-4">
-                                <div class="observatorioPage--articleItem">
-                                    <a class="observatorioPage--articleItem-img" href="#!">
-                                        <img src="https://placehold.co/300x160" alt="">
-                                    </a>
-                                    <h3 class="observatorioPage--articleItem-title">
-                                        <a href="#!">
-                                            Opinión | La pedagogía, entre el mundo real y el mundo platónico
-                                        </a>
-                                    </h3>
-                                    <p class="observatorioPage--articleItem-desc">
-                                        <a href="#!">
-                                            En esta nueva entrega de la serie “Lecturas para la educación”, Andrés
-                                            García Barrios analiza dos grandes libros filosóficos sobre los inicios de
-                                            la pedagogía.
-                                        </a>
-                                    </p>
-                                    <a href="#!" class="article-btn">
-                                        Conocer más
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col col-lg-4">
-                                <div class="observatorioPage--articleItem">
-                                    <a class="observatorioPage--articleItem-img" href="#!">
-                                        <img src="https://placehold.co/300x160" alt="">
-                                    </a>
-                                    <h3 class="observatorioPage--articleItem-title">
-                                        <a href="#!">
-                                            Opinión | La pedagogía, entre el mundo real y el mundo platónico
-                                        </a>
-                                    </h3>
-                                    <p class="observatorioPage--articleItem-desc">
-                                        <a href="#!">
-                                            En esta nueva entrega de la serie “Lecturas para la educación”, Andrés
-                                            García Barrios analiza dos grandes libros filosóficos sobre los inicios de
-                                            la pedagogía.
-                                        </a>
-                                    </p>
-                                    <a href="#!" class="article-btn">
-                                        Conocer más
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <!-- Grid Posts End -->                        
+                        <!-- Grid Posts End -->
 
                     </div>
                     <!-- End article -->
@@ -434,7 +560,7 @@
 
 
                 <!-- Sidebar -->
-                <div class="col col-lg-3 mx-auto">
+                <div class="col col-lg-3 mx-auto sidebarCol">
                     <div class="observatorioPage--sidebar">
 
                         <div class="observatorioPage--sidebar-box">
@@ -641,6 +767,49 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+
+            const swiper = new Swiper('.swiper', {
+                createElements: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+                // Responsive breakpoints
+                breakpoints: {
+                    // when window width is >= 320px
+                    400: {
+                        slidesPerView: 1,
+
+                    },
+                    // when window width is >= 480px
+                    480: {
+                        slidesPerView: 2,
+                    },
+                    990: {
+                        slidesPerView: 3
+                    },
+                    1180: {
+                        slidesPerView: 3,
+                    }
+                }
+
+            })
+
+
+
+
+        });
+
+
+
+    </script>
+
 </body>
 
 </html>
